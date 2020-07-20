@@ -1,6 +1,3 @@
-language: csharp
-solution: travis-mono-test.sln
-
 matrix:
   include:
     - language: csharp
