@@ -1,7 +1,7 @@
 language: csharp
 solution: travis-mono-test.sln
 
-jobs:
+matrix:
   include:
     - dotnet: 2.1.502
       mono: none
