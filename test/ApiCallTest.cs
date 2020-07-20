@@ -7,6 +7,7 @@ using System.IO;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+//Travis Test
 // Subclass DuoApi so we can test using HTTP rather than HTTPS
 public class TestDuoApi : DuoApi
 {
