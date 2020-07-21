@@ -5,4 +5,4 @@ matrix:
       dotnet: 2.1.502
       mono: none
       env: DOTNETCORE=2  
-      script: ./test/ApiCallTest.cs
+      script: ./test/Makefile make test
