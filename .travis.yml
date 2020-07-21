@@ -1,8 +1,10 @@
 matrix:
   include:
     - language: csharp
+      before_install:
+        - ./test/Makefile make test
       solution: travis-mono-test.sln
       dotnet: 2.1.502
       mono: none
       env: DOTNETCORE=2  
-      script: ./test/Makefile make test
+      script: SigningTest.dll QueryParamsTest.dll
