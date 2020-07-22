@@ -1,6 +1,10 @@
 matrix:
   include:
     - language: csharp
+      before_install:
+        - sudo apt-get install nunit-console
+      before_script:
+        - nuget restore ./test/DuoApiTest.sln
       solution: ./test/DuoApiTest.sln
       dotnet: 2.1.502
       mono: none
