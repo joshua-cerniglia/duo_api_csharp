@@ -3,5 +3,6 @@ matrix:
     - language: csharp
       solution: ./test/DuoApiTest.sln
       mono: none
+      dotnet: 2.1.502
       script:
         - dotnet build ./test/DuoApiTest.sln
