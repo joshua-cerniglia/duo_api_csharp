@@ -3,7 +3,7 @@ matrix:
     - language: csharp
       solution: ./test/DuoApiTest.sln
       dotnet: 2.1.502
-      mono: none
+      mono: latest
       env: DOTNETCORE=2
       script:
         - xbuild ./test/DuoApiTest.sln
