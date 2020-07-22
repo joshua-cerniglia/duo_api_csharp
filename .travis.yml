@@ -1,11 +1,7 @@
 matrix:
   include:
     - language: csharp
-      os: windows
       solution: ./test/DuoApiTest.sln
       mono: none
-      install:
-        - choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64"
-        - choco install dotnetcore-sdk
       script:
         - dotnet build ./test/DuoApiTest.sln
