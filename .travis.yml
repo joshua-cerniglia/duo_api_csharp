@@ -4,5 +4,5 @@ matrix:
       mono: none
       dotnet: 2.1.502
       script:
-        - donet restore
+        - dotnet restore
         - dotnet build
