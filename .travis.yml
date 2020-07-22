@@ -6,4 +6,4 @@ matrix:
       mono: latest
       env: DOTNETCORE=2
       script:
-        - xbuild ./test/DuoApiTest.sln
+        - msbuild ./test/DuoApiTest.sln
