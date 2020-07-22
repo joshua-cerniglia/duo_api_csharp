@@ -1,8 +1,9 @@
-matrix:
-  include:
-    - language: csharp
-      mono: none
-      dotnet: 3.1.200
-      script:
-        - dotnet restore ./test
-        - dotnet build ./test
+language: csharp
+mono:
+  - latest
+solution: ./test/DuoApiTest.sln
+install:
+  - nuget restore s./test/DuoApiTest.sln
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
+script:
+  - msbuild /p:Configuration=Release ./test/DuoApiTest.sln
