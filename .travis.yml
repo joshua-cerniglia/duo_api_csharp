@@ -1,12 +1,9 @@
 matrix:
   include:
     - language: csharp
-      before_install:
-        - sudo apt-get install nunit-console
       solution: ./test/DuoApiTest.sln
       dotnet: 2.1.502
       mono: none
       env: DOTNETCORE=2
-      before_script:
-        - nunit-console ./test/Makefile make test
-      script: ./test/Makefile make test
+      script:
+        - xbuild ./test/DuoApiTest.sln
