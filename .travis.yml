@@ -3,7 +3,7 @@ mono:
   - latest
 solution: ./test/DuoApiTest.sln
 install:
-  - nuget restore s./test/DuoApiTest.sln
+  - nuget restore ./test/DuoApiTest.sln
   - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
-  - msbuild /p:Configuration=Release ./test/DuoApiTest.sln
+  - msbuild ./test/DuoApiTest.sln
