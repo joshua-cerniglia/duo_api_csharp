@@ -1,9 +1,9 @@
 language: csharp
 mono:
   - latest
-solution: ./test/DuoApiTest.sln
+solution: duo_api_csharp.sln
 install:
-  - nuget restore ./test/DuoApiTest.sln
+  - nuget restore duo_api_csharp.sln
   - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
-  - msbuild ./test/DuoApiTest.sln
+  - msbuild duo_api_csharp.sln
