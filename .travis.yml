@@ -1,6 +1,7 @@
 matrix:
   include:
     - language: csharp
+      os: windows
       solution: ./test/DuoApiTest.sln
       dotnet: 2.1.502
       mono: latest
