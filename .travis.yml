@@ -3,8 +3,6 @@ matrix:
     - language: csharp
       os: windows
       solution: ./test/DuoApiTest.sln
-      dotnet: 2.1.502
-      mono: latest
       install:
         - choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64"
         - choco install dotnetcore-sdk
