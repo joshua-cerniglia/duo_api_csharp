@@ -5,4 +5,4 @@ matrix:
       mono: none
       dotnet: 2.1.502
       script:
-        - dotnet build ./test/DuoApiTest.sln
+        - dotnet build 
