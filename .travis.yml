@@ -4,5 +4,4 @@ dotnet: 2.1.502
 solution: ./test/DuoApiTest.sln
 script:
   - dotnet restore ./test/DuoApiTest.sln
-  - msbuild
   - dotnet test ./test/DuoApiTest.sln
