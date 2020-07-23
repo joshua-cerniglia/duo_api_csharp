@@ -1,6 +1,6 @@
 language: csharp
 mono:
-  - 3.12.0
+  - latest
 solution: duo_api_csharp.sln
 install:
   - nuget restore duo_api_csharp.sln
