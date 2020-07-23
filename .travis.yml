@@ -1,8 +1,8 @@
 language: csharp
 mono:
-  - 3.12.0
+  - latest
 solution: duo_api_csharp.sln
 install:
   - travis_retry nuget restore -source "https://www.nuget.org/api/v2" duo_api_csharp.sln
 script:
-  - xbuild  /p:Configuration=Release duo_api_csharp.sln
+  - xbuild /p:Configuration=Release duo_api_csharp.sln
