@@ -1,10 +1,7 @@
 language: csharp
-mono:
-  - latest
+mono: none
+dotnet: 2.1.502
 solution: duo_api_csharp.sln
-install:
-  - nuget restore duo_api_csharp.sln
-  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
-  - nuget install VS.QualityTools.UnitTestFramework -Version 15.0.27323.2
 script:
-  - msbuild duo_api_csharp.sln
+  - dotnet restore
+  - dotnet test
