@@ -1,6 +1,9 @@
 language: csharp
-mono: none
+mono:
+  - 5.2.0
 dotnet: 2.1.502
+install:
+  - export FrameworkPathOverride=$(dirname $(which mono))/../lib/mono/4.5/
 solution: ./test/DuoApiTest.sln
 script:
   - dotnet restore ./test/DuoApiTest.sln
