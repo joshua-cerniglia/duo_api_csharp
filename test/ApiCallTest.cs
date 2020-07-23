@@ -374,7 +374,7 @@ public class TestApiCall
     {
         srv.handler = delegate(HttpListenerContext ctx)
         {
-            return "{\"stat\": \"OK\", \"response\": \"world!\"}";
+            return "{\"stat\": \"OK\", \"response\": \"hello, world!\"}";
         };
         string response = api.JSONApiCall<string>("GET", "/json_ok", new Dictionary<string,string>());
         Assert.AreEqual(response, "hello, world!");
