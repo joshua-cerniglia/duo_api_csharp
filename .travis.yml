@@ -3,7 +3,7 @@ mono:
   - 3.12.0
 solution: duo_api_csharp.sln
 install:
-  - nuget restore solution-name.sln
+  - nuget restore duo_api_csharp.sln
   - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
   - msbuild duo_api_csharp.sln
