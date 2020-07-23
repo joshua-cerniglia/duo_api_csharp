@@ -5,4 +5,4 @@ solution: duo_api_csharp.sln
 install:
   - travis_retry nuget restore -source "https://www.nuget.org/api/v2" duo_api_csharp.sln
 script:
-  - msuild duo_api_csharp.sln
+  - msbuild duo_api_csharp.sln
