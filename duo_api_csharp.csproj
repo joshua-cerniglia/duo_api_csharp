@@ -82,7 +82,7 @@
     <Folder Include="test\obj\Debug\TempPE\" />
     <Folder Include="test\obj\Release\TempPE\" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio AllowExistingFolder="true" />
   </ProjectExtensions>
